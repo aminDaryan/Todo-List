@@ -7,10 +7,20 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "bootstrap": "^4.4.1",
+<<<<<<< HEAD
     "node-sass": "^4.13.1",
     "react": "^16.13.0",
     "react-bootstrap": "^1.0.0-beta.16",
     "react-dom": "^16.13.0",
+=======
+    "jalali-moment": "^3.3.3",
+    "node-sass": "^4.13.1",
+    "react": "^16.12.0",
+    "react-bootstrap": "^1.0.0-beta.16",
+    "react-dom": "^16.12.0",
+    "react-modern-calendar-datepicker": "^2.1.0",
+    "react-persian-simple-calendar": "^0.5.2",
+>>>>>>> e7f29a8f3774d1ded8d54fb6f178c5e49525b123
     "react-scripts": "3.4.0"
   },
   "scripts": {

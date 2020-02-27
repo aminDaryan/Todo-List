@@ -12,6 +12,7 @@ export default class TodoForm extends Component {
         }
     }
 
+<<<<<<< HEAD
 
 
     handleSubmit = (event) => {
@@ -22,6 +23,12 @@ export default class TodoForm extends Component {
         } else {
             index = 0;
         }
+=======
+    handleSubmit = (event) => {
+
+        let index = this.state.todoList.length;
+
+>>>>>>> e7f29a8f3774d1ded8d54fb6f178c5e49525b123
         event.preventDefault();
         this.setState({
             todoList: [...this.state.todoList, { text: this.state.text, id: index, itemChecked: false }]
@@ -65,6 +72,7 @@ export default class TodoForm extends Component {
         })
     }
 
+<<<<<<< HEAD
     componentWillMount() {
         if (JSON.parse(localStorage.getItem('The todolist')))
             return this.setState({ todoList: JSON.parse(localStorage.getItem('The todolist')) })
@@ -78,6 +86,8 @@ export default class TodoForm extends Component {
     componentWillUnmount() {
         localStorage.setItem('The todolist', JSON.stringify(this.state.todoList))
     }
+=======
+>>>>>>> e7f29a8f3774d1ded8d54fb6f178c5e49525b123
 
     render() {
 
@@ -93,7 +103,11 @@ export default class TodoForm extends Component {
 
         return (
             <div className='todoList'>
+<<<<<<< HEAD
                 <div style={{ width: '50%' }}>
+=======
+                <div style={{width: '50%'}}>
+>>>>>>> e7f29a8f3774d1ded8d54fb6f178c5e49525b123
                     <form onSubmit={this.handleSubmit} className='todoList__form'>
                         <input className='todoList__form__input__add' value={this.state.text} onChange={this.handleAddFormChange} />
                         <button className='todoList__form__button__add' onClick={this.handleAddFormEmpty} type='submit'> Add </button>
@@ -151,7 +165,11 @@ export default class TodoForm extends Component {
 
 
                 </div>
+<<<<<<< HEAD
                 <div style={{ width: '50%' }}>
+=======
+                <div style={{width: '50%'}}>
+>>>>>>> e7f29a8f3774d1ded8d54fb6f178c5e49525b123
                     <SearchTab
                         todoList={this.state.todoList}
                         handlingToggleCheckbox={this.handleToggleCheckbox}
